@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,221 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Simple_Center" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tkY-7s-NMI">
+                                <rect key="frame" x="52" y="158" width="216" height="164.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mhw-ZB-tZa">
+                                        <rect key="frame" x="0.0" y="0.0" width="216" height="164.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animal Sounds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkD-0P-Aoh">
+                                                <rect key="frame" x="0.0" y="0.0" width="216" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9K3-TU-W3G">
+                                                <rect key="frame" x="0.0" y="29" width="216" height="106.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cIn-Xr-AJi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="106.5"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="🐱">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="72" name="AppleColorEmoji"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                            <tabStops>
+                                                                                <textTab alignment="left" location="28">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="56">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="84">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="112">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="140">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="168">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="196">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="224">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="252">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="280">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="308">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="336">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                            </tabStops>
+                                                                        </paragraphStyle>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="catButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1WO-jn-6lR"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FY9-8c-K39">
+                                                        <rect key="frame" x="72" y="0.0" width="72" height="106.5"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="🐶">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="72" name="AppleColorEmoji"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                            <tabStops>
+                                                                                <textTab alignment="left" location="28">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="56">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="84">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="112">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="140">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="168">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="196">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="224">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="252">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="280">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="308">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="336">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                            </tabStops>
+                                                                        </paragraphStyle>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dogButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T76-Yr-Y1x"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3aP-ml-auT">
+                                                        <rect key="frame" x="144" y="0.0" width="72" height="106.5"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="🦏">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="72" name="AppleColorEmoji"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                            <tabStops>
+                                                                                <textTab alignment="left" location="28">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="56">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="84">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="112">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="140">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="168">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="196">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="224">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="252">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="280">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="308">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                                <textTab alignment="left" location="336">
+                                                                                    <options/>
+                                                                                </textTab>
+                                                                            </tabStops>
+                                                                        </paragraphStyle>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="rhinoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XIC-be-RPJ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap an Animal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3d-ec-eew">
+                                                <rect key="frame" x="0.0" y="135.5" width="216" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tkY-7s-NMI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7BY-Is-k9Z"/>
+                            <constraint firstItem="tkY-7s-NMI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t4x-Jo-l6Z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="animalSound" destination="IkD-0P-Aoh" id="4yt-CV-0MT"/>
+                        <outlet property="catButtonMeow" destination="cIn-Xr-AJi" id="jdd-RC-k8b"/>
+                        <outlet property="dogButtonOutlet" destination="FY9-8c-K39" id="xsk-kB-pcD"/>
+                        <outlet property="rhinoButtonOutlet" destination="3aP-ml-auT" id="gLj-Uj-yyv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116.25" y="118.75"/>
         </scene>
     </scenes>
 </document>
